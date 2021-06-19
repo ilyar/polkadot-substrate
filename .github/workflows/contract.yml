@@ -64,5 +64,4 @@ jobs:
           toolchain: nightly
           profile: minimal
           override: true
-      - run: npm install --global wasm-opt
       - run: make build
