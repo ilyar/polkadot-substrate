@@ -1,10 +1,10 @@
 clean:
 	cargo clean
-	rm -fr out
+	rm -fr build
 
 lint:
 	cargo fmt --all -- --check
-	cargo clippy --all-targets
+	cargo +nightly clippy --all-targets
 
 fmt:
 	cargo fmt
